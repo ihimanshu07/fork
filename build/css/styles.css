@@ -35,6 +35,7 @@
 */
 
 html {
+  scroll-behavior: smooth;
   line-height: 1.5;
   /* 1 */
   -webkit-text-size-adjust: 100%;
@@ -52,6 +53,9 @@ html {
   /* 6 */
 }
 
+.poshead{
+  position: sticky;
+}
 /*
 1. Remove the margin in all browsers.
 2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
