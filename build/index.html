@@ -36,7 +36,7 @@
       <!-- USING FLEX-COL-REVERSE USED -->
       <section
         id="hero"
-        class="flex flex-col-reverse justify-center sm:flex-row p-6 items-center gap-8 mb-12 scroll-mt-40"
+        class="flex flex-col-reverse justify-center sm:flex-row p-6 items-center gap-8 mb-12 scroll-mt-40 widescreen:section-min-height tallscreen:section-min-height"
       >
         <article class="sm:w-1/2">
           <h2
@@ -69,7 +69,7 @@
       <hr class="mx-auto bg-black dark:bg-white w-1/2" />
 
       <!-- ROCKET SECTION -->
-      <section id="rockets" class="p-6 my-12 scroll-mt-20">
+      <section id="rockets" class="p-6 my-12 scroll-mt-20 widescreen:section-min-height tallscreen:section-min-height">
         <h2
           class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white"
         >
@@ -146,7 +146,7 @@
 
       <hr class="mx-auto bg-black dark:bg-white w-1/2" />
 
-      <section id="testimonials" class="p-6 my-12">
+      <section id="testimonials" class="p-6 my-12 widescreen:section-min-height tallscreen:section-min-height">
         <h2
           class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white"
         >
@@ -201,7 +201,7 @@
       <!-- COMPLETED FORM SECTION -->
       <section id="contact"
             class="p-6 my-12 scroll-mt-16 widescreen:section-min-height tallscreen:section-min-height">
-            <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">
+            <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white widescreen:section-min-height tallscreen:section-min-height">
                 Contact Us
             </h2>
             <form action="" class="max-w-4xl mx-auto text-2xl sm:text-3xl flex flex-col items-left gap-4">
@@ -217,5 +217,27 @@
             </form>
         </section>
     </main>
+
+    <footer id="footer" class="bg-teal-700 text-white text-xl">
+      <section class="max-w-4xl mx-auto p-4 flex flex-col sm:flex-row sm:justify-between widescreen:section-min-height tallscreen:section-min-height">
+        <address>
+          <h2>Acme Rocket-Powered Products, Inc.</h2>
+          122 G.T.B. Nagar <br>
+          Kharar, Mohali +91 12345-6789<br>
+          <a href="mailto:acmerocketslaunch@mail.com">acmerocketslaunch@mail.com</a><br>
+          Phone: <a href="tel:+1234567890">(+91) 12345 6789</a>
+        </address>
+        <nav class="hidden md:flex flex-col gap-2" aria-label ="footer">
+          <a href="#rockets" class="hover:opacity-90">Our Rockets</a>
+          <a href="#testimonials" class="hover:opacity-90">Testimonials</a>
+          <a href="#contact" class="hover:opacity-90">Contact Us</a>
+        </nav>
+
+        <div class="flex flex-col sm:gap-2">
+          <p class="text-right">Copyright &copy; <span id="year">2023</span></p>
+          <p class="text-right">All Rights Reserved</p>
+        </div>
+      </section>
+    </footer>
   </body>
 </html>
